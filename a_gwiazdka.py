@@ -124,14 +124,14 @@ def way(mapa):
     return mapa
 
 
-a = load_map('C:\\Users\\Krzysztof\\Downloads\\grid.txt')
-b = load_map('C:\\Users\\Krzysztof\\Downloads\\grid.txt')
-c = load_map('C:\\Users\\Krzysztof\\Downloads\\grid.txt')
-d = load_map('C:\\Users\\Krzysztof\\Downloads\\grid.txt')
-e = load_map('C:\\Users\\Krzysztof\\Downloads\\grid.txt')
+a = load_map('C:\\Users\\Krzysztof\\Documents\\robotyka\\grid.txt')
+b = load_map('C:\\Users\\Krzysztof\\Documents\\robotyka\\grid.txt')
+c = load_map('C:\\Users\\Krzysztof\\Documents\\robotyka\\grid.txt')
+d = load_map('C:\\Users\\Krzysztof\\Documents\\robotyka\\grid.txt')
+e = load_map('C:\\Users\\Krzysztof\\Documents\\robotyka\\grid.txt')
 abc = Map(a, b, c, d, e)
 abc = way(abc)
-plik = open('C:\\Users\\Krzysztof\\Downloads\\new_grid.txt', 'w')
+plik = open('C:\\Users\\Krzysztof\\Documents\\robotyka\\new_grid.txt', 'w')
 plik.write(str(abc.road_map))
 plik.close()
 print("otwarta\n", abc.value_map, "\nzamknieta\n", abc.closed_map, "\nrodzicow\n", abc.parents_map, "\nkosztow\n", abc.cost_map, "\ndroga\n", abc.road_map)
